@@ -1,0 +1,66 @@
+@import "../styles/root";
+
+.title {
+    width: 100%;
+    height: 10rem;
+    line-height: 10rem;
+    font-weight: 500;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    @include linerText(45deg, #06619c, #da0202);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    table {
+        height: 80rem;
+        width: 95%;
+        border: 1px solid #3d656e;
+        font-size: 1.6rem;
+        margin: 3rem 0rem;
+        padding: 1rem 3rem;
+        box-sizing: border-box;
+        // @include linerText(45deg, #06619c, #02da97);
+        // background-color: rgba(58, 88, 105, 0.1);
+        thead {
+            display: table-header-group;
+            vertical-align: middle;
+            border-color: inherit;
+            th {
+                height: 3rem;
+            }
+        }
+
+        tbody {
+            .darkColor {
+                background-color: rgba(186, 213, 229, 0.2);
+            }
+            tr {
+                td {
+                    border: 1px solid #f4f4f4;
+                    height: 7rem;
+                    width: 12.5%;
+                    padding: 1rem;
+                    div {
+                        color: #3598dc;
+                        height: 7rem;
+                        width: 100%;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        font-weight: 500;
+
+                        p {
+                            color: red;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
